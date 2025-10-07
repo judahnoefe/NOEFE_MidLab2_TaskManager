@@ -26,8 +26,5 @@ export class TaskService{
   getTotalTasks(): number{
     return this.tasks.length;
   }
-
-  getCompletedTasks(): number{
-    return this.tasks.filter(t => t.completed).length;
-  }
 }
+
