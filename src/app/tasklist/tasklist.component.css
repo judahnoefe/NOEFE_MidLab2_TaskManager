@@ -1,26 +1,33 @@
-.tasklist{
-  text-align: left;
+.tasklist {
+  margin: 1rem 0;
 }
 
-.taskitem{
+.taskitem {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 8px 0;
-  padding: 8px;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
 }
 
-.taskitem input[type="checkbox"]{
-  transform: scale(1.2);
-  cursor: pointer;
+.taskitem input[type="checkbox"] {
+  margin-right: 8px;
 }
 
-.taskitem span{
-  font-size: 16px;
-  color: #2c3e50;
-}
-
-.taskitem span.completed{
+.completed {
   text-decoration: line-through;
-  color: #888;
+  color: gray;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
 }
