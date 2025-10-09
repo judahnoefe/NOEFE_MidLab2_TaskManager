@@ -10,14 +10,14 @@ import { TaskService, Task } from '../services/taskservice.service';
   templateUrl: './tasklist.component.html',
   styleUrls: ['./tasklist.component.css']
 })
-export class TaskListComponent{
+export class TaskListComponent {
   tasks: Task[];
 
   constructor(private taskService: TaskService) {
     this.tasks = this.taskService.getTasks();
   }
 
-  toggleTask(index: number){
-    this.taskService.toggleTask(index);
+  deleteTask(index: number) {
+    this.taskService.deleteTask(index);
   }
 }
